@@ -3,7 +3,7 @@ import math
 
 #variables for work
 epcila = 0.01
-delta = epcila/2 - 0.0001
+delta = epcila/2 - 10**(-5)
 A = 1.2
 B = 4.0
 
