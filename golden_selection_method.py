@@ -34,5 +34,5 @@ def golden_selection_method(function_number):
             x1 = get_x1(A, B, const)
         lenght = B - A
         iteration_counter += 1
-    print(f'x1 = {x1}; x2 = {x2}; total_iterations = {iteration_counter}')
+    print(f'[МЕТОД ЗОЛОТОГО СЕЧЕНИЯ] x1 = {x1}; x2 = {x2}; total_iterations = {iteration_counter}')
 

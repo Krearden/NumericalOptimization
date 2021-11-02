@@ -26,5 +26,5 @@ def dichotomy_method(function_number):
             A = x1
         length = B - A
         iteration_counter += 1
-    print(f'x1 = {x1}; x2 = {x2}; total_iterations = {iteration_counter}')
+    print(f'[МЕТОД ДИХОТОМИИ] x1 = {x1}; x2 = {x2}; total_iterations = {iteration_counter}')
 

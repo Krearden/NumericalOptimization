@@ -18,5 +18,5 @@ def bruteforce_method(function_number):
         if value_of_X_i < minimum_value:
             minimum_value = value_of_X_i
             minimum_x = X_i
-    print(f'x_min = {minimum_x}, total iterations = {n}')
+    print(f'[МЕТОД ПЕРЕБОРА] x_min = {minimum_x}, total iterations = {n}')
 
