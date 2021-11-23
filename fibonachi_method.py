@@ -4,11 +4,6 @@ import math
 #variables
 import function
 
-A = 1.2
-B = 4.0
-epcila = 0.01
-n = 12
-
 
 #func
 def getFibonacchi_number(k):
@@ -38,6 +33,3 @@ def fibonacci_method(function_number):
             x_1 = x_2
             x_2 = A + B - x_2
     print(f"[МЕТОД ФИБОНАЧЧИ] x_min = {(A + B) / 2}, total iterations = {n}")
-
-
-#main
