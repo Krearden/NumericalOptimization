@@ -4,9 +4,6 @@ import function
 
 
 #func
-def getFunctionValue(x):
-    return (5 * math.sin(2 * x) + x*x)
-
 def dichotomy_method(function_number):
     epcila = 0.01
     delta = epcila / 2 - 10 ** (-5)
@@ -26,5 +23,6 @@ def dichotomy_method(function_number):
             A = x1
         length = B - A
         iteration_counter += 1
+    x_min = f'{(A + B) / 2}'
     print(f'[МЕТОД ДИХОТОМИИ] x1 = {x1}; x2 = {x2}; total_iterations = {iteration_counter}')
 
