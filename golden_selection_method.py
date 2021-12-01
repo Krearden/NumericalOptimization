@@ -17,8 +17,6 @@ def golden_selection_method(function_number):
     epcila = 0.01
     x1 = get_x1(A, B, const)
     x2 = get_x2(A, B, const)
-    x1_znach = function.getFunctionValue(x1, function_number)
-    x2_zhach = function.getFunctionValue(x2, function_number)
     lenght = B - A
     iteration_counter = 0
     while (lenght > epcila):
