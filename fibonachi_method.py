@@ -7,10 +7,6 @@ import function
 
 #func
 def getFibonacchi_number(k):
-    uno = 1/math.sqrt(5)
-    dos = (((1 + math.sqrt(5)) / 2) ** k)
-    tre = (((1 - math.sqrt(5)) / 2) ** k)
-
     return int(1/math.sqrt(5) * ((((1 + math.sqrt(5)) / 2) ** k) - (((1 - math.sqrt(5)) / 2) ** k)))
 
 def fibonacci_method(function_number):
@@ -32,4 +28,4 @@ def fibonacci_method(function_number):
             A = x_1
             x_1 = x_2
             x_2 = A + B - x_2
-    print(f"[МЕТОД ФИБОНАЧЧИ] x_min = {(A + B) / 2}, total iterations = {n}")
+    print(f"[МЕТОД ФИБОНАЧЧИ] x_1 = {x_1}, x_2 = {x_2}, x_min = {(A + B) / 2}, total iterations = {n}")

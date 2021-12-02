@@ -4,33 +4,26 @@ import function
 
 
 #func
-def get_x1(A, B, const):
-    return A + const * (B - A)
-
-def get_x2(A, B, const):
-    return A + B - get_x1(A, B, const)
-
 def golden_selection_method(function_number):
     const = (3 - math.sqrt(5)) / 2
     A = function.intervals[function_number][0]
     B = function.intervals[function_number][1]
     epcila = 0.01
-    x1 = get_x1(A, B, const)
-    x2 = get_x2(A, B, const)
+    x1 = A + const * (B - A)
+    x2 = A + B - x1
     lenght = B - A
     iteration_counter = 0
     while (lenght > epcila):
-        x1_znach = function.getFunctionValue(x1, function_number)
-        x2_zhach = function.getFunctionValue(x2, function_number)
-        if x1_znach > x2_zhach:
-            A = x1
-            x1 = x2
-            x2 = get_x2(A, B, const)
-        elif x1_znach < x2_zhach:
+        f_x1 = function.getFunctionValue(x1, function_number)
+        f_x2 = function.getFunctionValue(x2, function_number)
+        if f_x1 <= f_x2:
             B = x2
             x2 = x1
-            x1 = get_x1(A, B, const)
+            x1 = A + B - x1
+        elif f_x1 > f_x2:
+            A = x1
+            x1 = x2
+            x2 = A + B - x2
         lenght = B - A
         iteration_counter += 1
-    print(f'[МЕТОД ЗОЛОТОГО СЕЧЕНИЯ] x1 = {x1}; x2 = {x2}; total_iterations = {iteration_counter}')
-
+    print(f'[МЕТОД ЗОЛОТОГО СЕЧЕНИЯ] x1 = {x1}; x2 = {x2}; x_min = {(x1 - x2) / 2}, total_iterations = {iteration_counter}')
