@@ -11,9 +11,9 @@ def golden_selection_method(function_number):
     epcila = 0.01
     x1 = A + const * (B - A)
     x2 = A + B - x1
-    lenght = B - A
+    length = B - A
     iteration_counter = 0
-    while (lenght > epcila):
+    while (length > epcila):
         f_x1 = function.getFunctionValue(x1, function_number)
         f_x2 = function.getFunctionValue(x2, function_number)
         if f_x1 <= f_x2:
@@ -24,6 +24,6 @@ def golden_selection_method(function_number):
             A = x1
             x1 = x2
             x2 = A + B - x2
-        lenght = B - A
+        length = B - A
         iteration_counter += 1
     print(f'[МЕТОД ЗОЛОТОГО СЕЧЕНИЯ] x1 = {x1}; x2 = {x2}; x_min = {(x1 - x2) / 2}, total_iterations = {iteration_counter}')

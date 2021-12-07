@@ -35,7 +35,10 @@ def dichotomy_method_SECOND(function_number):
         iteration_counter += 1
         if iteration_counter > 100:
             break
-    print(f"[МЕТОД ДИХОТОМИИ - 2ой вариант NEED TEST] x_min = {x_2}, total iterations = {iteration_counter}")
+    if iteration_counter < 100:
+        print(f"[МЕТОД ДИХОТОМИИ - 2ой вариант] x_min = {x_2}, total iterations = {iteration_counter}")
+    else:
+        print(f"[МЕТОД ДИХОТОМИИ - 2ой вариант] ОТВЕТ НЕ ПОЛУЧЕН")
 
 
 
