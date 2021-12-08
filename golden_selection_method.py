@@ -26,4 +26,4 @@ def golden_selection_method(function_number):
             x2 = A + B - x2
         length = B - A
         iteration_counter += 1
-    print(f'[МЕТОД ЗОЛОТОГО СЕЧЕНИЯ] x1 = {x1}; x2 = {x2}; x_min = {(x1 - x2) / 2}, total_iterations = {iteration_counter}')
+    print(f'[МЕТОД ЗОЛОТОГО СЕЧЕНИЯ] x1 = {x1}; x2 = {x2}; x_min = {(x1 + x2) / 2}, total_iterations = {iteration_counter}')
